@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+   <title>Tela de Login</title>
+   <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="../src/css/login.css" media="screen" />
+   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+   <main class="container">
+
+      <div class="login-box">
+         <h1>Organize todo o seu armazenamento de tecido</h1>
+         <img src="../src/images/team-work-not-css.png" alt="pessoas arrumando caixas">
+      </div>
+
+      <div class="login">
+
+         <h1>
+            Faça Login
+         </h1>
+         <div class="loginGoogle">
+            <a class="navbar-brand" id="entradaEstoque" href="#">
+               <img src="../src/images/google-icon.png" alt=" " width="30" height="24">
+               Logar com Google
+           </a>
+            
+
+         </div>
+         <div class="loginFacebook">
+            <a class="navbar-brand" id="entradaEstoque" href="#">
+               <img src=" " alt=" " width="30" height="24">
+              Logar com Facebook
+           </a>
+         </div>
+
+         <div class="user-box">
+            <input type="text" id='usuario' placeholder="Login id" required maxlength="15">
+            <i class="fa fa-user-o" aria-hidden="true"></i>
+         </div>
+         <div class="user-box">
+            <input type="password" id='senha' placeholder="password" required maxlength="15">
+            <i class="fa fa-eye-slash" aria-hidden="true"></i>
+         </div>
+ 
+         <div class="informaçõesLogin">
+            
+               <input
+                 type="checkbox"
+                 id="lembrarInformacoes"
+                 name="lembrar"
+                 value="lembrarInformacoes" />
+               <label for="lembrarInformacoes">Lembrar informações de login</label>
+           
+         </div>
+         <div class="botao">
+            <button>Entrar</button>
+         </div>
+
+         <div class="esqueceuSenha">
+            <a href="#">Esqueceu a senha?</a>
+         </div>
+      </div>
+   </main>
+   <script src="../src/js/login.js"></script>
+</body>
+
+</html>

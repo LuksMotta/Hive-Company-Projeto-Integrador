@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <title>Cadastro - Honey</title>
+
+    <link rel="shortcut icon" href="../src/images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <div class="div-titulo">
+            <h1>CADASTRO DO PRODUTO</h1>
+        </div>
+        <div class="div-form">
+            <form>
+                <div class="div-codigo-produto">
+                    <div class="div-codigo">
+                        <label for="">Código</label>
+                        <input type="number">
+                    </div>
+
+                    <div class="div-produto">
+                        <label for="">Nome do Produto</label>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="div-descricao-data">
+                    <div class="div-descricao">
+                        <label for="">Descrição</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="div-data">
+                        <label for="">Data de Cadatstro</label>
+                        <input type="date">
+                    </div>
+                </div>
+
+                <div class="div-quantidade-lote">
+                    <div class="div-fornecedor">
+                        <label for="">Fornecedor</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="div-quantidade">
+                        <label for="">Quantidade</label>
+                        <input type="number">
+                    </div>
+
+                    <div class="div-lote">
+                        <label for="">Lote</label>
+                        <input type="number">
+                    </div>
+                </div>
+
+                <div class="div-classe-observacao">
+                    <div class="div-classe">
+                        <label for="">Classe</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Defina a Classe</option>
+                            <option value="AX">AX</option>
+                            <option value="AY">AY</option>
+                            <option value="AZ">AZ</option>
+                            <option value="AX">BX</option>
+                            <option value="AY">BY</option>
+                            <option value="AZ">BZ</option>
+                            <option value="AX">CX</option>
+                            <option value="AY">CY</option>
+                            <option value="AZ">CZ</option>
+                        </select>
+                    </div>
+
+                    <div class="div-observacao">
+                        <label for="">Observação</label>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="div-visualizacao-imagem">
+                    <label for="">Visualização:</label>
+                    <div class="div-imagem">
+                        <img src="https://villanova.vteximg.com.br/arquivos/ids/156374-1000-1000/600218-0100.2.jpg?v=637230251100270000"
+                            alt="Tecido">
+                    </div>
+                </div>
+
+                <div class="div-enviar-voltar">
+                    <button type="submit" class="btn">Enviar</button>
+                    <button class="btn">Voltar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
