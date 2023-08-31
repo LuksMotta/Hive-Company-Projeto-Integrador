@@ -107,7 +107,7 @@ button
 
 button:hover
 {
-    background-color: #9c6c38;
+    background-color: #ff8400;
     transition: all .4s ease-out;
 }
 

@@ -1,0 +1,54 @@
+.div-codigo{
+    display: flex;
+    flex-direction: column;
+}
+
+.div-produto{
+    display: flex;
+    flex-direction: column;
+}
+
+.div-fornecedor{
+    display: flex;
+    flex-direction: column;
+}
+
+.div-lote{
+    display: flex;
+    flex-direction: column;
+}
+
+.div-data{
+    display: flex;
+    flex-direction: column;
+}
+
+.div-classe{
+    display: flex;
+    flex-direction: column;
+}
+
+.div-descricao{
+    display: flex;
+    flex-direction: column;
+}
+
+.div-observacao{
+    display: flex;
+    flex-direction: column;
+}
+
+.div-quantidade{
+    display: flex;
+    flex-direction: column;
+}
+
+.div-codigo-produto{
+    display: flex;
+    flex-direction: row;
+}
+
+.div-lote-data-classe{
+    display: flex;
+    flex-direction: row;
+}

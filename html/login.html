@@ -2,14 +2,61 @@
 <html lang="pt-BR">
 
 <head>
-   <title>Tela de Login</title>
-   <meta charset="utf-8">
-   <link rel="stylesheet" type="text/css" href="../src/css/login.css" media="screen" />
-   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+   <link rel="shortcut icon" href="../src/images/logo.png" type="image/x-icon">
+   <link rel="stylesheet" href="../src/css/styles.css">
+   <link rel="stylesheet" href="../src/css/login.css">
+   <link rel="stylesheet" href="../src/css/sidebar.css">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+
+   <title>Login - Honey</title>
+
 </head>
 
-<body>
+<body id="body-pd">
+   <header class="header" id="header">
+       <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+   </header>
+   <div class="l-navbar" id="nav-bar">
+       <nav class="nav">
+           <div> <a href="#" class="nav_logo">
+                   <i class='bx bx-layer nav_logo-icon'></i>
+                   <span class="nav_logo-name">Honey</span> </a>
+               <div class="nav_list">
+                   <a href="./controle.html" class="nav_link ">
+                       <i class='bx bxs-calendar-check'></i>
+                       <span class="nav_name">Controle de Estoque</span> </a>
+                   <a href="./grade-produtos.html" class="nav_link">
+                       <i class='bx bxs-grid-alt nav_icon'></i>
+                       <span class="nav_name">Grade de Produtos</span> </a>
+                   <a href="./cadastro.html" class="nav_link">
+                       <i class='bx bx-registered'></i>
+                       <span class="nav_name">Cadastro</span> </a>
+                   <a href="./entrada.html" class="nav_link active">
+                       <i class='bx bx-door-open' ></i>
+                       <span class="nav_name">Entrada No Estoque</span> </a>
+                   <a href="./saida.html" class="nav_link">
+                       <i class='bx bxs-car nav_icon'></i>
+                       <span class="nav_name">Saída do Estoque</span> </a>
+                   <a href="#" class="nav_link">
+                       <i class='bx bx-bell nav_icon'></i>
+                       <span class="nav_name">Notificações</span> </a>
+                 
+               </div>
+           </div>
+           <a href="#" class="nav_link">
+               <i class='bx bx-log-out nav_icon'></i>
+               <span class="nav_name">Sair</span> </a>
+       </nav>
+   </div>
    <main class="container">
 
       <div class="login-box">
@@ -26,15 +73,15 @@
             <a class="navbar-brand" id="entradaEstoque" href="#">
                <img src="../src/images/google-icon.png" alt="Logar com Google" width="30" height="24">
                Continuar com Google
-           </a>
-            
+            </a>
+
 
          </div>
          <div class="loginFacebook">
             <a class="navbar-brand" id="entradaEstoque" href="#">
                <img src="../src/images/facebook-icon.webp" alt="Logar com Facebook" width="30" height="24">
                Continuar com Facebook
-           </a>
+            </a>
          </div>
 
          <div class="user-box">
@@ -45,16 +92,12 @@
             <input type="password" id='senha' placeholder="password" required maxlength="15">
             <i class="fa fa-eye-slash" aria-hidden="true"></i>
          </div>
- 
+
          <div class="informaçõesLogin">
-            
-               <input
-                 type="checkbox"
-                 id="lembrarInformacoes"
-                 name="lembrar"
-                 value="lembrarInformacoes" />
-               <label for="lembrarInformacoes">Lembrar informações de login</label>
-           
+
+            <input type="checkbox" id="lembrarInformacoes" name="lembrar" value="lembrarInformacoes" />
+            <label for="lembrarInformacoes">Lembrar informações de login</label>
+
          </div>
          <div class="botao">
             <button>Entrar</button>
@@ -65,7 +108,9 @@
          </div>
       </div>
    </main>
-   <script src="../src/js/login.js"></script>
+
 </body>
+<script src="../src/js/login.js"></script>
+<script src="../js/entrada.js"></script>
 
 </html>

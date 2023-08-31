@@ -7,91 +7,131 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../src/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <link rel="stylesheet" href="../src/css/cadastro.css">
+    <link rel="stylesheet" href="../src/css/sidebar.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
     <title>Cadastro - Honey</title>
 
-    <link rel="shortcut icon" href="../src/images/logo.png" type="image/x-icon">
 </head>
 
-<body>
+<body id="body-pd">
+    <header class="header" id="header">
+        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div> <a href="#" class="nav_logo">
+                    <i class='bx bx-layer nav_logo-icon'></i>
+                    <span class="nav_logo-name">Honey</span> </a>
+                <div class="nav_list">
+                    <a href="./controle.html" class="nav_link ">
+                        <i class='bx bxs-calendar-check'></i>
+                        <span class="nav_name">Controle de Estoque</span> </a>
+                    <a href="./grade-produtos.html" class="nav_link">
+                        <i class='bx bxs-grid-alt nav_icon'></i>
+                        <span class="nav_name">Grade de Produtos</span> </a>
+                    <a href="./cadastro.html" class="nav_link active">
+                        <i class='bx bx-registered'></i>
+                        <span class="nav_name">Cadastro</span> </a>
+                    <a href="./entrada.html" class="nav_link ">
+                        <i class='bx bx-door-open'></i>
+                        <span class="nav_name">Entrada No Estoque</span> </a>
+                    <a href="./saida.html" class="nav_link">
+                        <i class='bx bxs-car nav_icon'></i>
+                        <span class="nav_name">Saída do Estoque</span> </a>
+                    <a href="#" class="nav_link">
+                        <i class='bx bx-bell nav_icon'></i>
+                        <span class="nav_name">Notificações</span> </a>
+
+                </div>
+            </div>
+            <a href="#" class="nav_link">
+                <i class='bx bx-log-out nav_icon'></i>
+                <span class="nav_name">Sair</span> </a>
+        </nav>
+    </div>
+
     <main>
         <div class="div-titulo">
             <h1>CADASTRO DO PRODUTO</h1>
         </div>
         <div class="div-form">
             <form>
-                <div class="div-codigo-produto">
-                    <div class="div-codigo">
-                        <label for="">Código</label>
-                        <input type="number">
+                <div class="div-main-1">
+                    <div class="div-codigo-produto">
+                        <div class="div-codigo">
+                            <label for="">Código</label>
+                            <input type="number">
+                        </div>
+    
+                        <div class="div-produto">
+                            <label for="">Nome do Produto</label>
+                            <input type="text">
+                        </div>
                     </div>
-
-                    <div class="div-produto">
-                        <label for="">Nome do Produto</label>
-                        <input type="text">
-                    </div>
-                </div>
-
-                <div class="div-descricao-data">
-                    <div class="div-descricao">
-                        <label for="">Descrição</label>
-                        <input type="text">
-                    </div>
-
-                    <div class="div-data">
-                        <label for="">Data de Cadatstro</label>
-                        <input type="date">
-                    </div>
-                </div>
-
-                <div class="div-quantidade-lote">
+    
                     <div class="div-fornecedor">
                         <label for="">Fornecedor</label>
                         <input type="text">
                     </div>
-
-                    <div class="div-quantidade">
-                        <label for="">Quantidade</label>
-                        <input type="number">
+    
+                    <div class="div-lote-data-classe">
+                        <div class="div-lote">
+                            <label for="">Lote</label>
+                            <input type="number">
+                        </div>
+        
+                        <div class="div-data">
+                            <label for="">Data de Cadatstro</label>
+                            <input type="date">
+                        </div>
+        
+                        <div class="div-classe">
+                            <label for="">Classe</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Defina a Classe</option>
+                                <option value="AX">AX</option>
+                                <option value="AY">AY</option>
+                                <option value="AZ">AZ</option>
+                                <option value="BX">BX</option>
+                                <option value="BY">BY</option>
+                                <option value="BZ">BZ</option>
+                                <option value="CX">CX</option>
+                                <option value="CY">CY</option>
+                                <option value="CZ">CZ</option>
+                            </select>
+                        </div>
                     </div>
-
-                    <div class="div-lote">
-                        <label for="">Lote</label>
-                        <input type="number">
+    
+                    <div class="div-descricao">
+                        <label for="">Descrição</label>
+                        <input type="text">
                     </div>
-                </div>
-
-                <div class="div-classe-observacao">
-                    <div class="div-classe">
-                        <label for="">Classe</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Defina a Classe</option>
-                            <option value="AX">AX</option>
-                            <option value="AY">AY</option>
-                            <option value="AZ">AZ</option>
-                            <option value="AX">BX</option>
-                            <option value="AY">BY</option>
-                            <option value="AZ">BZ</option>
-                            <option value="AX">CX</option>
-                            <option value="AY">CY</option>
-                            <option value="AZ">CZ</option>
-                        </select>
-                    </div>
-
+    
                     <div class="div-observacao">
                         <label for="">Observação</label>
                         <input type="text">
                     </div>
                 </div>
 
-                <div class="div-visualizacao-imagem">
-                    <label for="">Visualização:</label>
-                    <div class="div-imagem">
-                        <img src="https://villanova.vteximg.com.br/arquivos/ids/156374-1000-1000/600218-0100.2.jpg?v=637230251100270000"
-                            alt="Tecido">
+                <div class="div-main-2">
+                    <div class="div-visualizacao-imagem">
+                        <label for="">Visualização:</label>
+                        <div class="div-imagem">
+                            <img src="https://villanova.vteximg.com.br/arquivos/ids/156374-1000-1000/600218-0100.2.jpg?v=637230251100270000"
+                                alt="Tecido">
+                        </div>
+                    </div>
+    
+                    <div class="div-quantidade">
+                        <label for="">Quantidade</label>
+                        <input type="number">
                     </div>
                 </div>
 
@@ -103,5 +143,6 @@
         </div>
     </main>
 </body>
+<script src="../js/sidebar.js"></script>
 
 </html>
