@@ -31,7 +31,7 @@
                     <i class='bx bx-layer nav_logo-icon'></i>
                     <span class="nav_logo-name">Honey</span> </a>
                 <div class="nav_list">
-                    <a href="./controle.html" class="nav_link ">
+                    <a href="./controle.html" class="nav_link">
                         <i class='bx bxs-calendar-check'></i>
                         <span class="nav_name">Controle de Estoque</span> </a>
                     <a href="./grade-produtos.html" class="nav_link">
@@ -41,18 +41,21 @@
                         <i class='bx bx-registered'></i>
                         <span class="nav_name">Cadastro</span> </a>
                     <a href="./entrada.html" class="nav_link active">
-                        <i class='bx bx-door-open' ></i>
+                        <i class='bx bx-door-open'></i>
                         <span class="nav_name">Entrada No Estoque</span> </a>
                     <a href="./saida.html" class="nav_link">
                         <i class='bx bxs-car nav_icon'></i>
                         <span class="nav_name">Saída do Estoque</span> </a>
+                    <a href="./curva-abc.html" class="nav_link">
+                        <i class='bx bx-trending-up'></i>
+                        <span class="nav_name">Curvas</span> </a>
                     <a href="#" class="nav_link">
                         <i class='bx bx-bell nav_icon'></i>
                         <span class="nav_name">Notificações</span> </a>
-                  
+
                 </div>
             </div>
-            <a href="#" class="nav_link">
+            <a href="../index.html" class="nav_link btn-sair">
                 <i class='bx bx-log-out nav_icon'></i>
                 <span class="nav_name">Sair</span> </a>
         </nav>
@@ -60,55 +63,59 @@
     <!--Container Main start-->
 
     <main>
-        <div>
+        <div class="title">
             <h1>Entrada do Produto</h1>
         </div>
         <form>
-            <div>
-                <div class="id">
+            <div class="dataInformation">
+                <div class="data">
                     <label for="produto-id">Código</label>
-                    <input type="number" name="produto-id" id="produto-id">
+                    <input type="number" name="produto-id" class="produto-id" id="produto-id">
                 </div>
-                <div class="">
+                <div class="data">
                     <label for="produto-nome">Nome do Produto</label>
-                    <input type="text" name="produto-nome" id="produto-nome">
+                    <input type="text" name="produto-nome" class="produto-nome" id="produto-nome">
                 </div>
             </div>
-            <div>
-                <div>
+            <div class="dataField">
+                <div class="produto">
                     <label for="produto-lote">Lote</label>
                     <input type="number" name="produto-lote" id="produto-lote">
                 </div>
-                <div>
+
+                <div class="produto">
+                    <label for="produto-data">Data de Entrada</label>
+                    <input type="date" name="produto-data" id="produto-data">
+                </div>
+
+                <div class="produto-quantidade">
                     <label for="produto-qtd">Quantidade</label>
                     <input type="number" name="produto-qtd" id="produto-qtd">
                 </div>
-            </div>
-            <div>
-                <label for="produto-data">Data de Entrada</label>
-                <input type="date" name="produto-data" id="produto-data">
-            </div>
-            <div>
-                <label for="produto-img">Visualização</label>
-                <input type="image" src="" alt="" name="produto-img">
-            </div>
-            <div>
+                <div class="produto-view">
+                    <label for="produto-img">Visualização</label>
+                    <input type="image" src="" alt="" name="produto-img" class="produto-img">
+                </div>
+            </div ee>
+            <div class="produto">
                 <label for="produto-classe">Classe</label>
                 <select class="form-select" aria-label="Default select example">
                     <option selected>Defina a classe do produto</option>
                     <option value="AX">AX</option>
                     <option value="AY">AY</option>
                     <option value="AZ">AZ</option>
-                    <option value="AX">BX</option>
-                    <option value="AY">BY</option>
-                    <option value="AZ">BZ</option>
-                    <option value="AX">CX</option>
-                    <option value="AY">CY</option>
-                    <option value="AZ">CZ</option>
+                    <option value="BX">BX</option>
+                    <option value="BY">BY</option>
+                    <option value="BZ">BZ</option>
+                    <option value="CX">CX</option>
+                    <option value="CY">CY</option>
+                    <option value="CZ">CZ</option>
                 </select>
             </div>
-            <button type="submit" class="btn">Enviar</button>
-            <button class="btn">Voltar</button>
+            <div class="btns">
+                <button type="submit" class="btn">Enviar</button>
+                <button class="btn">Voltar</button>
+            </div>
         </form>
     </main>
 </body>

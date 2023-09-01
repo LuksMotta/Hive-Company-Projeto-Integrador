@@ -19,7 +19,47 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<body>
+<body id="body-pd">
+    <header class="header" id="header">
+        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div> <a href="#" class="nav_logo">
+                    <i class='bx bx-layer nav_logo-icon'></i>
+                    <span class="nav_logo-name">Honey</span> </a>
+                <div class="nav_list">
+                    <a href="./controle.html" class="nav_link">
+                        <i class='bx bxs-calendar-check'></i>
+                        <span class="nav_name">Controle de Estoque</span> </a>
+                    <a href="./grade-produtos.html" class="nav_link">
+                        <i class='bx bxs-grid-alt nav_icon'></i>
+                        <span class="nav_name">Grade de Produtos</span> </a>
+                    <a href="./cadastro.html" class="nav_link">
+                        <i class='bx bx-registered'></i>
+                        <span class="nav_name">Cadastro</span> </a>
+                    <a href="./entrada.html" class="nav_link">
+                        <i class='bx bx-door-open'></i>
+                        <span class="nav_name">Entrada No Estoque</span> </a>
+                    <a href="./saida.html" class="nav_link active">
+                        <i class='bx bxs-car nav_icon'></i>
+                        <span class="nav_name">Saída do Estoque</span> </a>
+                    <a href="./curva-abc.html" class="nav_link">
+                        <i class='bx bx-trending-up'></i>
+                        <span class="nav_name">Curvas</span> </a>
+                    <a href="#" class="nav_link">
+                        <i class='bx bx-bell nav_icon'></i>
+                        <span class="nav_name">Notificações</span> </a>
+
+                </div>
+            </div>
+            <a href="../index.html" class="nav_link btn-sair">
+                <i class='bx bx-log-out nav_icon'></i>
+                <span class="nav_name">Sair</span> </a>
+        </nav>
+    </div>
+    <!--Container Main start-->
+
     <nav class="sidebar">
         <header>
             <div class="image-text">
@@ -56,4 +96,5 @@
     </nav>
 </body>
 <script src="../js/sidebar.js"></script>
+
 </html>

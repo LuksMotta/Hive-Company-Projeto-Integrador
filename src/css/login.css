@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 *
 {
     margin: 0;
@@ -7,24 +8,85 @@
 
 body 
 {
-    background: #696060;
-    
+    display: flex;
+    background: #F4A460;
+    overflow-y: hidden;
+}
+
+.btn-box{
+ align-items: center;
+ gap: 50px;
+ margin: 0;
+}
+
+.btn-box a{
+   text-decoration: none;
+}
+
+.img-people{
+    position: absolute;
+    bottom: -7.5%;
+    left: 16%;
+    z-index: 1000;
+    height: 70%;
+}
+
+aside{
+    background-color: #F4A460;
+}
+
+.text-box
+{    
+    border-radius: 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 120px;
+}
+
+.text-box h1{
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container
 {
-    display: flex;
+    margin-top: 1%;
+    height: 99vh;
     justify-content: left;
-    width: 100%;
-    margin-top: 100px;
+    width: 70%;
+    padding: 9% 5% 0% 8%;
+    background-color: #ffffff;
+    border-top-left-radius: 10%;
 }
 
-.login-box
-{
-    background-color: #ffffff;
-    padding: 300px;
-    border-radius: 30px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+.btn-box{
+    display: flex;
+    justify-content: center;
+}
+
+.loginGoogle, .loginFacebook{
+    height: 50px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 8px 12px 0px #4545501A;
+    padding: 2%;
+    margin: 25px;
+    align-items: center;
+    display: flex;
+}
+
+.label-loginGoogle, .label-loginGoogle{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-brand :hover{
+    transform: scale(1.025);
+}
+
+.loginGoogle img, .loginFacebook img{
+    height: 100%;
+    width: auto;
 }
 
 h1
@@ -34,10 +96,23 @@ h1
     color: #353761;
 }
 
-img {
-    display: block;
-    margin: auto;
-    width: 165px;
+.opcoes{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.esqueceuSenha a{
+    color: #F4A460;  
+    text-decoration: none;
+}
+
+.esqueceuSenha a:hover
+{
+    color: #9c6c38;
+    transition: all .4s ease-out;
 }
 
 .user-box input
@@ -51,7 +126,7 @@ img {
     margin-bottom: 10px;
     outline: none;
     min-width: 180px;
-    font-size: 16px;
+    font-size: 20px;
     transition: all .3s ease-out;
     
 }
@@ -90,24 +165,27 @@ img {
 
 button
 {
-    background-color: #C98740;
+    background-color: #F4A460;
     color: #FFFF;
     padding: 10px;
     text-align: center;
-    width: 250px;
-    height: 40px;
-    font-size: 12pt;
+    width: 70%;
+    height: 50px;
+    font-size: 17pt;
     border: transparent;
     border-radius: 20px;
     margin-top: 20px;
+    margin-bottom: 20px;
     cursor: pointer;
     outline: none;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
     
 }
 
 button:hover
 {
-    background-color: #ff8400;
+    background-color: #9c6c38;
     transition: all .4s ease-out;
 }
 
@@ -131,6 +209,7 @@ button:hover
 {
     position: absolute;
     top: 17px;
-    right: 1px;
+    right: 10px;
     color: rgb(80, 75, 75);
 }
+

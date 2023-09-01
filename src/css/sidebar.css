@@ -119,6 +119,14 @@ a {
     transform: scale(1.09);
 }
 
+.show .btn-sair{
+    margin-left: 10px ;
+    margin-right: 10px;
+    border-radius: 8px;
+    background-color: #ffffff33;
+    color: #F7F6FB;
+}
+
 .nav_icon {
     font-size: 1.25rem;
 }
