@@ -36,6 +36,8 @@ select {
     margin: 5px;
     margin-left: 0px;
     margin-right: 10px;
+    height: 40px;
+    font-size: 15px;
 }
 
 h1 {
@@ -49,7 +51,7 @@ h1 {
 
 .div-lote,
 .div-data,
-.div-quantidade {
+.div-valor {
     width: 167px;
 }
 
@@ -61,12 +63,7 @@ h1 {
 
 .div-classe,
 select {
-    width: 490px;
-}
-
-.div-classe,
-select {
-    height: px;
+    width: 295px;
 }
 
 .div-codigo {
@@ -113,6 +110,11 @@ select {
     flex-direction: column;
 }
 
+.div-valor{
+    display: flex;
+    flex-direction: column;
+}
+
 .div-quantidade {
     display: flex;
     flex-direction: column;
@@ -124,6 +126,11 @@ select {
 }
 
 .div-lote-data-classe {
+    display: flex;
+    flex-direction: row;
+}
+
+.div-valor-classe {
     display: flex;
     flex-direction: row;
 }
